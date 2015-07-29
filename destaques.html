@@ -1,0 +1,250 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/comum.css">
+		<link rel="stylesheet" type="text/css" href="css/destaque-principal.css">
+				
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/destaque-principal.js"></script>	
+		<script type="text/javascript" src="js/menu.js"></script>	
+		<script type="text/javascript" src="js/comum.js"></script>
+	</head>
+	<body>
+		<div class="cabecalho home">
+			<div class="agrupador-cabecalho">
+				<div class="envoltorio">
+					<h1 class="logo"><a href="/" class="link">Mega Filmes Online</a></h1>
+					<div class="menu">
+						<ul class="grupo">
+							<li class="unidade   ">
+								<div class="mais">
+									<a class="acao" href="/" title="Filmes">
+										<span class="descricao">Filmes</span>
+									</a>
+								</div>
+							</li>
+							<li class="unidade   ">
+								<div class="mais">
+									<a class="acao" href="/" title="Séries">
+										<span class="descricao">Séries</span>
+									</a>
+								</div>
+							</li>
+							<li class="unidade  submenu ">
+								<div class="mais">
+									<a class="acao" href="#" title="Gêneros">
+										<span class="descricao">Gêneros</span>
+										<span class="icone"></span>
+									</a>
+								</div>
+								<div class="submenu fix">
+									<ul class="fl">
+										<div class="agrupador">
+											<div class="formato"></div>
+											<ul class="itens">
+												<li class="item">
+													<a class="link" href="/generos/acao" title="Ação">
+														<span class="botao">Ação</span>
+													</a>
+												</li>										
+												<li class="item">
+													<a class="link" href="/generos/animacao" title="Animação">
+														<span class="botao">Animação</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/aventura" title="Aventura">
+														<span class="botao">Aventura</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/comedia" title="Comédia">
+														<span class="botao">Comédia</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/biografia" title="Biografia">
+														<span class="botao">Biografia</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/documentario" title="Documentário">
+														<span class="botao">Documentário</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/drama" title="Drama">
+														<span class="botao">Drama</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/fantasia" title="Fantasia">
+														<span class="botao">Fantasia</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/ficcao-cientifica" title="Ficção-Científica">
+														<span class="botao">Ficção-Científica</span>
+													</a>
+												</li>
+											</ul>
+											
+											<ul class="itens">										
+												<li class="item">
+													<a class="link" href="/generos/guerra" title="Guerra">
+														<span class="botao">Guerra</span>
+													</a>
+												</li>	
+												<li class="item">
+													<a class="link" href="/generos/infantil" title="Infantil">
+														<span class="botao">Infantil</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/musical" title="Musical">
+														<span class="botao">Musical</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/policial" title="Policial">
+														<span class="botao">Policial</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/romance" title="Romance">
+														<span class="botao">Romance</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/suspense" title="Suspense">
+														<span class="botao">Suspense</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/terrorhorror" title="Terror/Horror">
+														<span class="botao">Terror/Horror</span>
+													</a>
+												</li>
+												<li class="item">
+													<a class="link" href="/generos/western" title="Western">
+														<span class="botao">Western</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</ul>
+								</div>					
+							</li>
+							<li class="unidade">
+								<a class="acao" href="/especial/lancamentos/" title="Lançamentos">
+									<span class="descricao">Lançamentos</span>
+								</a>
+							</li>
+							<li class="unidade">
+								<a class="acao" href="/especial/lancamentos/" title="Lançamentos">
+									<span class="descricao">Notícias</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a class="abrir-busca" href="javascript:;"></a>
+				</div>
+				
+				<div class="envoltorio busca">
+					<div class="busca-dropdown">
+						<div id="busca" class="fl">
+							<form action="/busca/" method="GET" id="FormBuscaSuggest">
+								<input type="text" name="q" class="fl" defaultValue="Encontre filmes, atores e diretores" value="Encontre filmes, atores e diretores" id="campo_busca" autocomplete="off" />
+								<input type="submit" class="fl" value="buscar" />
+
+								<div class="minimo-caracteres fix" id="help_busca">
+									E necessário digitar pelo menos <strong>2</strong> caracteres
+								</div>
+
+								<div class="icone-suggest"></div>
+								<div id="auto_suggest" class="fix fl">
+								</div>
+							</form>
+						</div>
+						<a class="fechar-busca-dropdown" href="javascript:;">Fechar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mascara-busca"></div>
+		<div class="destaque-principal">
+			<div class="area-0">
+				<div class="unidade">
+					<div class="conteudo">
+						<ul class="itens">
+							<li class="item" data-indice="1" style="background-image: url('http://masaryk.tv/wp-content/uploads/2015/03/avengers-marvel.jpeg')">
+									<a class="link" href="/filme/o-doador-de-memorias/">
+										<div class="container_960 clearfix">
+											<div class="conteudo">
+												<span class="agrupador">
+													<span class="coringa">										
+															<h2 class="chapeu">Os Vingadores 2: A Era de Ultron</h2>
+															<span class="texto">23 Abril, 2015 (EUA)</span>
+															<span class="texto tags"><img src="img/stars.png" />7.5</span>
+															<span class="texto tags">2h22min. Ação, Aventura, Ficção Cientifica</span>
+															<span class="botao">Assistir Agora</span>
+													</span>
+												</span>																
+											</div>									
+										</div>									
+									</a>
+							</li>
+						
+							<li class="item" data-indice="2" style="background-image: url('http://movieboozer.com/wp-content/uploads/2015/01/wild-card-image-jason-statham.jpg')">
+									<a class="link" href="/filme/o-doador-de-memorias/">
+										<div class="container_960 clearfix">
+											<div class="conteudo">
+												<span class="agrupador">
+													<span class="coringa">										
+															<h2 class="chapeu">Wild Card</h2>
+															<span class="texto">1 Janeiro, 2015 (EUA)</span>
+															<span class="texto tags"><img src="img/stars.png" />5.5</span>
+															<span class="texto tags">2h22min. Ação</span>
+															<span class="botao">Assistir Agora</span>
+													</span>
+												</span>																
+											</div>									
+										</div>									
+									</a>
+							</li>
+						</ul>
+					</div>
+					<a class="navegacao anterior" href="javascript:;"><span class="icone"></span></a>
+					<a class="navegacao proximo" href="javascript:;"><span class="icone"></span></a>
+				</div>
+			</div>
+
+			<div class="area-1">
+				<div class="conteudo">
+					<ul class="itens">
+						<li class="item">
+							<a class="link" data-indice="0" href="javascript:;"></a>
+							<div class="grupo">
+								<div class="agrupador">
+									<span class="figura"><img class="imagem" src="http://masaryk.tv/wp-content/uploads/2015/03/avengers-marvel.jpeg" alt="O doador de memórias"></span>
+								</div>
+								<span class="formato"><span class="icone"></span></span>
+							</div>
+						</li>				
+						<li class="item">
+							<a class="link" data-indice="1" href="javascript:;"></a>
+							<div class="grupo">
+								<div class="agrupador">
+									<span class="figura"><img class="imagem" src="http://media.telecineplay.com.br/cache/banners/c01ad8cb4bb64224aa19b467adbd83cf_imagem_miniatura.jpeg" alt="Especial terror sobrenatural "></span>
+								</div>
+								<span class="formato"><span class="icone"></span></span>
+							</div>
+						</li>				
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

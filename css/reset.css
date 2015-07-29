@@ -1,0 +1,97 @@
+/*-----------------------------------------------------------------------------
+autor: Luan Garcia
+-----------------------------------------------------------------------------*/
+/* =Reset
+-----------------------------------------------------------------------------*/
+* {margin: 0px;padding: 0px; outline: none;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+fieldset {display:block;}
+address,caption,cite,code,dfn,em,th,var {	font-style:normal;font-weight:normal;}
+ol,ul, li {list-style: none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;line-height: normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}
+legend {display: none;}
+a {text-decoration: none; outline: 0;}
+a:hover, a:active, a:focus {outline: 0;}
+/* INICIO CSS PADRÃO
+-----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+.clearfix:after {content: "."; display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {height:1%;}
+.clear {clear: both;height: 1px;margin: 0px;padding: 0px;line-height: 0px;}
+.rpl {overflow: hidden; text-indent:-9999em; display: block;}
+.rpl a {display:block;width: 100%;height: 100%;position: relative;}
+.fix {overflow: hidden;zoom: 1; display: block;}
+.cl{clear: both;}
+.fl {display: inline;float: left;}
+.fr {display: inline;float: right;}
+.crop {display: block;}
+.crop * {float: left;}
+.crop a, .crop {overflow: hidden;}
+.crop a, .crop{border: 1px solid #dedede;}
+.crop a img, .crop img {margin: -1px;}
+/*.crop a:hover, .crop:hover{border: 2px solid #cc150e;}
+.crop a:hover img, .crop:hover img {margin: -2px;}*/
+input[type='radio'], input[type='checkbox'] {border: none;padding: 0px;.margin: -4px;}
+input[type='text'], textarea, select,textarea {
+	font-family: 'Arial';
+	/*background-color: #faeda5;
+	border: none;
+	color:#7f5400;
+	font-size: 15px;
+    height: 37px;
+    line-height: 37px;*/
+}
+input[type='text']:focus, textarea:focus {/*background-color:#d7edf3; border-color:#056168;*/}
+/*textarea {overflow-y: auto;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; width: 715px; height: 130px;}
+label{color:#ba2a04; font-size: 20px; line-height: 37px;display: block;}*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/*
+	CSS LIGHTBOX
+ * */
+.modal_static{display: none; position: relative; z-index: 99999;}
+#mask, .mask {position: fixed;width: 100%;height: 100%;background-color:#000;z-index: 9995;top: 0px;left: 0px;opacity:0.85;	-moz-opacity: 0.85;	filter: alpha(opacity=85);}
+#mask2 {position: fixed;width: 100%;height: 100%;background-color:#000;z-index: 9995;top: 0px;left: 0px;opacity:0.85;	-moz-opacity: 0.85;	filter: alpha(opacity=85);}
+#lightbox {position: fixed; z-index: 100;top: 8%; left: 0; width: 100%; }
+#lightbox .lightbox {position: absolute; top: 0; left: 50%; background-color:#fff;z-index: 9999;}
+#lightbox .btx {position: absolute; top: 10px; right: 20px;}
+#fechar_lightbox {width: 17px; height: 17px; background: url(../img/sprite.png) no-repeat -268px 0px;}
+#fechar_lightbox:hover {background-position: -268px -17px;}
+#ligbtox_content {background-color:#fff; }
+#lightbox .loading {background: url(../img/loading.gif) no-repeat bottom left;position: fixed; z-index: 9999; width: 220px; height: 40px; top: 50%; left: 50%; margin: -20px 0 0 -110px; font-family:"Raleway"; font-size: 12px; color: #fff; text-align: center;}
+#lightbox .titulo-login, .modal_static .titulo-login {background-color: #f3f6f6; border-bottom: 2px solid #e7e7e7; height: 70px; margin-bottom: 0px;position: relative;}
+#lightbox .titulo-login h2, .modal_static .titulo-login h2 {line-height: 70px;color:#363636; font-family: 'Open Sans' font-weight: 700; padding-left: 20px;}
+#ligbtox_content .content, .modal_static .content {padding: 16px 20px 20px; background-color: #f3f6f6;}
+.modal_static #fechar_lightbox { background-image: none; right: 12px; top: 10px; position: absolute; z-index: 10; font-family: Arial; color: #999; font-size: 30px; font-weight: 700;  }
+.modal_static #fechar_lightbox:hover { opacity: 0.8; }
+
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light.woff') format('woff'),
+         url('../fonts/OpenSans-Light.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.opl {font-family: 'OpenSansLight';}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular.woff') format('woff'),
+         url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.opr {font-family: 'OpenSansRegular';}

@@ -1,0 +1,350 @@
+.destaque-principal {
+	min-width: 980px;
+	width: auto !important;
+	width: 980px;
+	margin-bottom: 80px;
+	overflow: hidden;
+}
+.destaque-principal .area-0 {
+	background-color: black;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.destaque-principal .area-0 .agrupador {
+	display: inline-block;
+	height: 206px;
+	position: absolute;
+	left: 0;
+	text-align: left;
+	bottom: 100px;
+	width: 620px;
+	z-index: 10;
+}
+
+.destaque-principal .area-0 .agrupadorgpleft {
+	display: inline-block;
+	height: 206px;
+	position: absolute;
+	left: 0px;
+	text-align: left;
+	bottom: 50px;
+	width: 620px;
+	z-index: 10;
+}
+
+.destaque-principal .area-0 .botao:hover {background-color: #E4211A;}
+
+.destaque-principal .area-0 .botao {
+	margin-top: 15px;
+	padding: 8px 15px 8px 30px;
+	background: #F1352E url(../img/icn-btn-now.png) no-repeat center left 10px;
+	color: #ffffff;
+	font: 600 13px 'Open Sans', Arial;
+	display: inline-block;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+}
+.destaque-principal .area-0 .botao:hover {
+	opacity: 1;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	cursor: pointer;
+}
+.destaque-principal .area-0 .botao-filme {
+	opacity: 0;
+	position: absolute;
+	top: -100px;
+	left: 394px;
+	width: 149px;
+	height: 149px;
+	background: url("../img/btn-destaque.png");
+	transition: 200ms ease-out;
+	-moz-transition: 200ms ease-out;
+	-0-transition: 200ms ease-out;
+	-webkit-transition: 200ms ease-out;
+}
+.destaque-principal .area-0 .botao-filme:hover {
+	opacity: 1;
+}
+.destaque-principal .area-0 .conteudo {
+	width: 100%;
+	position: relative;
+	height: 562px;
+}
+.destaque-principal .area-0 .conteudo:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.destaque-principal .area-0 .coringa {
+	display: table-cell;
+	height: 206px;
+	vertical-align: middle;
+	width: 550px;
+}
+.destaque-principal .area-0 .chapeu {
+	color: #FFFFFF;
+	font: normal normal bold 22px/1em "Open Sans", Arial, Helvetica, sans-serif;
+	display: inline-block;
+	width: 300px;
+	text-shadow: 1px 1px 1px #333333;
+}
+.destaque-principal .area-0 .chapeu:hover {
+	color: white;
+}
+.destaque-principal .area-0 .figura, .destaque-principal .area-0 .imagem {
+	float: left;
+	height: 562px;
+	width: 1024px;
+}
+.destaque-principal .area-0 .item {
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	float: left;
+	height: 562px;
+	position: absolute;
+	width: 100%;
+	transition: 300ms ease-out;
+	-moz-transition: 300ms ease-out;
+	-0-transition: 300ms ease-out;
+	-webkit-transition: 300ms ease-out;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+	opacity: 0;
+}
+.destaque-principal .area-0 .item .link {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.destaque-principal .area-0 .item.selecionado {
+	transition: opacity 300ms linear;
+	-moz-transition: opacity 300ms linear;
+	-0-transition: opacity 300ms linear;
+	-webkit-transition: opacity 300ms linear;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
+.destaque-principal .area-0 .itens {
+	/* height: 562px; */
+	/* position: relative; */
+	/* margin-left: -42px; */
+}
+.destaque-principal .area-0 .link {
+	display: block;
+}
+.destaque-principal .area-0 .link:hover .botao-filme {
+	opacity: 1;
+	transition: opacity 400ms linear;
+	-moz-transition: opacity 400ms linear;
+	-0-transition: opacity 400ms linear;
+	-webkit-transition: opacity 400ms linear;
+}
+.destaque-principal .area-0 .mais {
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+	opacity: 0.85;
+	background: url("../img/banner-bg-imagem.png");
+	display: block;
+	height: 206px;
+	position: absolute;
+	left: -42px;
+	bottom: 0;
+	width: 1024px;
+}
+.destaque-principal .area-0 .navegacao {
+	display: block;
+	height: 562px;
+	position: absolute;
+	top: 0;
+	width: 60px;
+	z-index: 20;
+}
+.destaque-principal .area-0 .navegacao .icone {
+	color: #a8a8a8;
+	line-height: 1em;
+	vertical-align: middle;
+	display: table-cell;
+	height: 562px;
+	text-align: center;
+	width: 128px;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+	opacity: 0.6;
+}
+.destaque-principal .area-0 .navegacao:hover {
+	text-decoration: none;
+}
+.destaque-principal .area-0 .navegacao:hover .icone {
+	line-height: 1em;
+	display: inline-block;
+	text-transform: none;
+	vertical-align: middle;
+	display: table-cell;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
+.destaque-principal .area-0 .navegacao.anterior {
+	left: 0;
+}
+.destaque-principal .area-0 .navegacao.anterior .icone {
+	margin-left: -25px;
+	margin-top: 0px;
+	background: url("../img/slide-left.png") no-repeat center;
+}
+.destaque-principal .area-0 .navegacao.proximo {
+	right: 0;
+}
+.destaque-principal .area-0 .navegacao.proximo .icone {
+	margin-left: 0px;
+	margin-top: 0px;
+	background: url("../img/slide-right.png") no-repeat center;
+}
+
+.texto.tags img {
+    margin: 0px 10px -2px 0;
+    padding: 0;
+}
+
+.destaque-principal .area-0 .texto {
+	margin-top: 10px;
+	color: #F4F4F4;
+	font: 600 13px 'Opens Sans', Arial;
+	display: block;
+	text-shadow: 1px 1px 1px #333333;
+}
+
+.destaque-principal .area-0 .textonoticia {
+	margin-top: 10px;
+	color: #F4F4F4;
+	font: 600 18px 'Opens Sans', Arial;
+	display: block;
+	text-shadow: 1px 1px 1px #333333;
+}
+.destaque-principal .area-0 .texto:hover {
+	color: white;
+}
+.destaque-principal .area-0 .unidade {
+	max-width: 1600px;
+	min-width: 940px;
+	width: auto !important;
+	width: 940px;
+	height: 562px;
+	margin: 0 auto;
+	overflow: hidden;
+	/* position: relative; */
+	width: 100%;
+}
+.destaque-principal .area-1 {
+	margin: -25px auto 25px auto;
+	z-index: 20;
+	overflow: hidden;
+	display: none;
+	position: relative;
+}
+.destaque-principal .area-1 .agrupador {
+	border: solid 1px #bbbbbb;
+	padding: 5px 5px 5px 5px;
+	background-color: white;
+}
+.destaque-principal .area-1 .chapeu {
+	padding-top: 5px;
+	color: #3c3c3c;
+	line-height: 1em;
+	display: block;
+	text-align: left;
+	height: 25px;
+	overflow: hidden;
+}
+.destaque-principal .area-1 .conteudo {
+	width: 940px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 940px;
+	text-align: center;
+}
+.destaque-principal .area-1 .conteudo:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.destaque-principal .area-1 .figura {
+	display: block;
+}
+.destaque-principal .area-1 .figura, .destaque-principal .area-1 .imagem {
+	height: 95px;
+	width: 168px;
+}
+.destaque-principal .area-1 .formato {
+	display: block;
+	line-height: 8px;
+}
+.destaque-principal .area-1 .grupo {
+	bottom: -127px;
+	opacity: 0;
+	left: -84px;
+	position: absolute;
+	transition: opacity 300ms ease-out 100ms;
+	-moz-transition: opacity 300ms ease-out 100ms;
+	-0-transition: opacity 300ms ease-out 100ms;
+	-webkit-transition: opacity 300ms ease-out 100ms;
+}
+.destaque-principal .area-1 .grupo.selecionado {
+	bottom: 22px;
+	opacity: 1;
+	transition: opacity 300ms linear 200ms;
+	-moz-transition: opacity 300ms linear 200ms;
+	-0-transition: opacity 300ms linear 200ms;
+	-webkit-transition: opacity 300ms linear 200ms;
+}
+.destaque-principal .area-1 .icone {
+	display: inline-block;
+	margin-top: -1px;
+	background: url("../img/banner-bolinha-seta.png") no-repeat 0 0;
+	width: 19px;
+	height: 9px;
+}
+.destaque-principal .area-1 .imagem {
+	outline: solid 1px #dedede;
+}
+.destaque-principal .area-1 .item {
+	float: left;
+	position: relative;
+	margin-left: 10px;
+}
+.destaque-principal .area-1 .item:first-child {
+	margin-left: 0;
+}
+.destaque-principal .area-1 .itens {
+	display: inline-block;
+}
+.destaque-principal .area-1 .link {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: #6B6B6B;
+	z-index: 30;
+	border-radius: 100px;
+}
+.destaque-principal .area-1 .link:hover {
+	opacity: 1;
+	text-decoration: none;
+	background: #FFF;
+}
+.destaque-principal .area-1 .link.selecionado {
+	opacity: 1;
+	background: #FFFDFD;
+}
+
+
+@media only screen and (min-width : 1600px) {
+	.destaque-principal .area-0 .navegacao.anterior {
+		background: url("../img/banner-bg-setas.png") repeat-y 0 0;
+	}
+
+	.destaque-principal .area-0 .navegacao.proximo {
+		background: url("../img/banner-bg-setas.png") repeat-y -128px 0;
+	}
+}

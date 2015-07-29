@@ -1,0 +1,1305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Mega Filmes Online</title>
+		<meta name="description" content="O assinante dos 6 canais Telecine pode assistir online, sem custo adicional, a mais de 1.500 títulos de todos os gêneros. Disponível na web, tablets e smartphones. O melhor do cinema, em qualquer lugar.">
+		<meta name="keywords" content="filme, filmes, vídeo, vídeos, cinema, ação, animação, aventura, biografia, comédia, documentário, drama, erótico, fantasia, ficção-científica, guerra, infantil, musical, policial, romance, suspense, terror, horror, western">
+		<!--Styles CSS-->
+		<!--link href='http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'-->
+		<link rel="stylesheet" type="text/css" href="css/comum.css">
+		<link rel="stylesheet" type="text/css" href="css/destaque-principal.css">
+		<link href="css/grid-movies.css" rel="stylesheet" type="text/css">
+		<!--Styles CSS fim-->
+		
+		<!--Javascript-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/json2.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="js/grid-movies.js"></script>	
+		<script type="text/javascript" src="js/script-slider.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/jquery.carousel.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/comum.js"></script>
+		<script type="text/javascript" src="js/trilhos.js"></script>
+		<script type="text/javascript" src="js/destaque-principal.js"></script>
+		<script type="text/javascript" src="js/scripts-all.js"></script>	
+		<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.smoothdivscroll-1.3-min.js"></script>		
+		<!--Javascript fim-->	
+	   
+		<!--[if IE 7]>
+		   <link rel="stylesheet" type="text/css" href="css/ie7.css">
+		<![endif]-->		
+	</head>
+<body>
+<div class="cabecalho home">
+	<div class="agrupador-cabecalho">
+		<div class="envoltorio">
+			<h1 class="logo"><a href="/" class="link">Mega Filmes Online</a></h1>
+			<div class="menu">
+				<ul class="grupo">
+					<li class="unidade   ">
+						<div class="mais">
+							<a class="acao" href="/" title="Filmes">
+								<span class="descricao">Filmes</span>
+							</a>
+						</div>
+					</li>
+					<li class="unidade   ">
+						<div class="mais">
+							<a class="acao" href="/" title="Séries">
+								<span class="descricao">Séries</span>
+							</a>
+						</div>
+					</li>
+					<li class="unidade  submenu ">
+						<div class="mais">
+							<a class="acao" href="#" title="Gêneros">
+								<span class="descricao">Gêneros</span>
+								<span class="icone"></span>
+							</a>
+						</div>
+						<div class="submenu fix">
+							<ul class="fl">
+								<div class="agrupador">
+									<div class="formato"></div>
+									<ul class="itens">
+										<li class="item">
+											<a class="link" href="/generos/acao" title="Ação">
+												<span class="botao">Ação</span>
+											</a>
+										</li>										
+										<li class="item">
+											<a class="link" href="/generos/animacao" title="Animação">
+												<span class="botao">Animação</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/aventura" title="Aventura">
+												<span class="botao">Aventura</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/comedia" title="Comédia">
+												<span class="botao">Comédia</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/biografia" title="Biografia">
+												<span class="botao">Biografia</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/documentario" title="Documentário">
+												<span class="botao">Documentário</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/drama" title="Drama">
+												<span class="botao">Drama</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/fantasia" title="Fantasia">
+												<span class="botao">Fantasia</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/ficcao-cientifica" title="Ficção-Científica">
+												<span class="botao">Ficção-Científica</span>
+											</a>
+										</li>
+									</ul>
+									
+									<ul class="itens">										
+										<li class="item">
+											<a class="link" href="/generos/guerra" title="Guerra">
+												<span class="botao">Guerra</span>
+											</a>
+										</li>	
+										<li class="item">
+											<a class="link" href="/generos/infantil" title="Infantil">
+												<span class="botao">Infantil</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/musical" title="Musical">
+												<span class="botao">Musical</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/policial" title="Policial">
+												<span class="botao">Policial</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/romance" title="Romance">
+												<span class="botao">Romance</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/suspense" title="Suspense">
+												<span class="botao">Suspense</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/terrorhorror" title="Terror/Horror">
+												<span class="botao">Terror/Horror</span>
+											</a>
+										</li>
+										<li class="item">
+											<a class="link" href="/generos/western" title="Western">
+												<span class="botao">Western</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</ul>
+						</div>					
+					</li>
+					<li class="unidade">
+						<a class="acao" href="/especial/lancamentos/" title="Lançamentos">
+							<span class="descricao">Lançamentos</span>
+						</a>
+					</li>
+					<li class="unidade">
+						<a class="acao" href="/especial/lancamentos/" title="Lançamentos">
+							<span class="descricao">Notícias</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a class="abrir-busca" href="javascript:;"></a>
+		</div>
+		
+		<div class="envoltorio busca">
+			<div class="busca-dropdown">
+				<div id="busca" class="fl">
+					<form action="/busca/" method="GET" id="FormBuscaSuggest">
+						<input type="text" name="q" class="fl" defaultValue="Encontre filmes, atores e diretores" value="Encontre filmes, atores e diretores" id="campo_busca" autocomplete="off" />
+						<input type="submit" class="fl" value="buscar" />
+
+						<div class="minimo-caracteres fix" id="help_busca">
+							E necessário digitar pelo menos <strong>2</strong> caracteres
+						</div>
+
+						<div class="icone-suggest"></div>
+						<div id="auto_suggest" class="fix fl">
+						</div>
+					</form>
+				</div>
+				<a class="fechar-busca-dropdown" href="javascript:;">Fechar</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mascara-busca"></div>
+<div class="destaque-principal">
+	<div class="area-0">
+		<div class="unidade">
+			<div class="conteudo">
+				<ul class="itens">
+					<li class="item" data-indice="0" style="background-image: url('img/cons.jpg')">
+						<a class="link" href="/filme/o-doador-de-memorias/">
+							<div class="container_960 clearfix">
+								<div class="conteudo">
+									<span class="agrupador">
+										<span class="coringa">								
+												<span class="texto tags">Séries</span>		
+												<h2 class="chapeu">Constantine</h2>
+												<span class="texto">1 Janeiro, 2014 (EUA)</span>
+												<span class="texto tags"><img src="img/stars.png" />4/5</span>
+												<span class="texto tags">42min. Ficção Cientifica, Terror</span>
+												<span class="botao">Assistir Agora</span>
+										</span>
+									</span>																
+								</div>									
+							</div>									
+						</a>
+					</li>
+					<li class="item" data-indice="1" style="background-image: url('http://masaryk.tv/wp-content/uploads/2015/03/avengers-marvel.jpeg')">
+						<a class="link" href="/filme/o-doador-de-memorias/">
+							<div class="container_960 clearfix">
+								<div class="conteudo">
+									<span class="agrupador">
+										<span class="coringa">				
+												<span class="texto tags">Filmes</span>								
+												<h2 class="chapeu">Os Vingadores 2: A Era de Ultron</h2>
+												<span class="texto">23 Abril, 2015 (EUA)</span>
+												<span class="texto tags"><img src="img/stars.png" />3/5</span>
+												<span class="texto tags">153min. Ação, Aventura, Ficção Cientifica</span>
+												<span class="botao">Assistir Agora</span>
+										</span>
+									</span>																
+								</div>									
+							</div>									
+						</a>
+					</li>				
+					<li class="item" data-indice="2" style="background-image: url('http://ib1.huluim.com/show_key_art/54?size=1600x600&region=US')">
+						<a class="link" href="/filme/o-doador-de-memorias/">
+							<div class="container_960 clearfix">
+								<div class="conteudo">
+									<span class="agrupadorgpleft">
+										<span class="coringa">			
+											<span class="texto tags">Notícias</span>											
+											<h2 class="chapeu">Uma Família da Pesada</h2>
+											<span class="textonoticia">'Os Simpsons' e 'Uma família da pesada' terão episódio juntos</span>
+											<span class="texto">Encontro entre as famílias Simpson e Griffin irá ao ar em 2014. Stewie será fã de Bart; Homer e Peter vão discutir sobre a melhor cerveja...</span>
+											<span class="botao">Saiba Mais</span>
+										</span>
+									</span>																
+								</div>									
+							</div>									
+						</a>
+					</li>			
+					<li class="item" data-indice="3" style="background-image: url('img/spn.jpg')">
+						<a class="link" href="/filme/o-doador-de-memorias/">
+							<div class="container_960 clearfix">
+								<div class="conteudo">
+									<span class="agrupadorgpleft">
+										<span class="coringa">	
+											<span class="texto tags">Notícias</span>											
+											<h2 class="chapeu">Supernatural</h2>
+											<span class="textonoticia">11ª Temporada confirmada pela CW channel</span>
+											<span class="texto tagnoticia">O canal The CW demonstrou estar em um generoso estado de espírito na data deste dia 11 de janeiro de 2015...</span>
+											<span class="botao">Saiba Mais</span>
+										</span>
+									</span>																
+								</div>									
+							</div>									
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a class="navegacao anterior" href="javascript:;"><span class="icone"></span></a>
+			<a class="navegacao proximo" href="javascript:;"><span class="icone"></span></a>
+		</div>
+	</div>
+
+	<div class="area-1">
+		<div class="conteudo">
+			<ul class="itens">
+				<li class="item">
+					<a class="link" data-indice="0" href="javascript:;"></a>
+					<div class="grupo">
+						<div class="agrupador">
+							<span class="figura"><img class="imagem" src="http://masaryk.tv/wp-content/uploads/2015/03/avengers-marvel.jpeg" alt="O doador de memórias"></span>
+						</div>
+						<span class="formato"><span class="icone"></span></span>
+					</div>
+				</li>	
+				<li class="item">
+					<a class="link" data-indice="1" href="javascript:;"></a>
+					<div class="grupo">
+						<div class="agrupador">
+							<span class="figura"><img class="imagem" src="http://masaryk.tv/wp-content/uploads/2015/03/avengers-marvel.jpeg" alt="O doador de memórias"></span>
+						</div>
+						<span class="formato"><span class="icone"></span></span>
+					</div>
+				</li>				
+				<li class="item">
+					<a class="link" data-indice="2" href="javascript:;"></a>
+					<div class="grupo">
+						<div class="agrupador">
+							<span class="figura"><img class="imagem" src="http://media.telecineplay.com.br/cache/banners/c01ad8cb4bb64224aa19b467adbd83cf_imagem_miniatura.jpeg" alt="Especial terror sobrenatural "></span>
+						</div>
+						<span class="formato"><span class="icone"></span></span>
+					</div>
+				</li>
+				<li class="item">
+					<a class="link" data-indice="3" href="javascript:;"></a>
+					<div class="grupo">
+						<div class="agrupador">
+							<span class="figura"><img class="imagem" src="http://media.telecineplay.com.br/cache/banners/c01ad8cb4bb64224aa19b467adbd83cf_imagem_miniatura.jpeg" alt="Especial terror sobrenatural "></span>
+						</div>
+						<span class="formato"><span class="icone"></span></span>
+					</div>
+				</li>				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container_960 clearfix" id="Conteudo">
+	<div class="BoxTrilhos navegacao clearfix">
+		<div class="titulo">
+			<h2>Novidades</h2>
+		</div>			
+		<div class="ct_filmes" id="makeMeScrollable">
+			<li id="id_0">
+				<div class="cover">
+					<div class="play">
+						<div id="detalhes" class="detalhes d-right">
+							<div class="seta"></div>
+							<div class="topo">
+								<h2><a href="#">Assistir O Exterminador do Futuro: Gênesis</a></h2>
+								<span class="year-info"><a href="#">2015</a></span>
+							</div>
+							<div class="descricao">
+								John Connor, líder da resistência humana, envia o Sargento Kyle Reese de volta para 1984 para proteger Sarah Connor e salvaguardar o futuro, mas uma mudança inesperada nos acontecimentos cria uma linha...
+							</div>
+							<div class="opcoes">
+								<div class="stars-info"><img src="img/stars2.png" />3/5</div>
+								<div class="tags-info"><a href="#">42min</a>. <a href="#">Drama</a>, <a href="#">Suspense</a></div>
+								<a href="#" class="btn-assistir-info">Assistir Agora</a>
+							</div>
+						</div>
+						<a href="http://chegapraka.com.br/filmes/filme/173/house-of-cards"></a>
+					</div>
+					<a href="http://chegapraka.com.br/filmes/filme/173/house-of-cards">
+					<img class="img" src="http://cdn.300mbmovies4u.com/imgs/Terminator-Genisys-1.jpg" alt=""/></a>
+				</div>
+			</li>			
+			
+			<li id="filme_1">
+				<div class="cover">
+					<div class="play" style="opacity: 1;">
+						<div id="detalhes" class="detalhes">
+							<div class="seta"></div>
+							<div class="topo">
+								<h2><a href="single.html">Mad Max: Estrada da Fúria</a></h2>
+								<span class="year-info"><a href="#">2015</a></span>
+							</div>
+							<div class="descricao">
+								Após ser capturado por Immortan Joe, um guerreiro das estradas chamado Max (Tom Hardy) se vê no meio de uma guerra mortal, iniciada pela Imperatriz Furiosa...
+							</div>
+							<div class="opcoes">
+								<div class="stars-info"><img src="img/stars2.png">2/5</div>
+								<div class="tags-info">120min. <a href="#">Ação</a>, <a href="#">Ficção cientifica</a></div>
+								<a href="single.html" class="btn-assistir-info">Assistir Agora</a>
+							</div>
+						</div>
+						<a href="single.html"></a>
+					</div>
+					<a href="single.html">
+						<img class="img" src="http://www.cinemarden.com.br/wp-content/uploads/2015/05/Poster.jpg" alt="">
+					</a>
+				</div>
+			</li>
+			<li id="filme_2">
+				<div class="cover">
+					<div class="play" style="opacity: 0.8;">
+						<div id="detalhes" class="detalhes">
+							<div class="seta"></div>
+							<div class="topo">
+								<h2><a href="single.html">A Ressaca 2</a></h2>
+								<span class="year-info"><a href="#">2015</a></span>
+							</div>
+							<div class="descricao">
+								Nick (Craig Robinson), Lou (Rob Corddry) e Jacob (Clark Duke) voltam a se envolver numa misteriosa viagem no tempo através de uma banheira, agora com a companhia de um novo amigo (Adam Scott). A direção é de responsabilidade de Steve Pink....
+							</div>
+							<div class="opcoes">
+								<div class="stars-info"><img src="img/stars2.png">2/5</div>
+								<div class="tags-info">94min. <a href="#">Comédia</a></div>
+								<a href="single.html" class="btn-assistir-info">Assistir Agora</a>
+							</div>
+						</div>
+						<a href="single.html"></a>
+					</div>
+					<a href="single.html">
+						<img class="img" src="http://www.intoleravel.com.br/wp-content/uploads/2015/01/hottub2trailers-poster02.jpg" alt="">
+					</a>
+				</div>
+			</li>
+			<li id="filme_3">
+				<div class="cover">
+					<div class="play" style="opacity: 0.8;">
+						<div id="detalhes" class="detalhes d-right">
+							<div class="seta"></div>
+							<div class="topo">
+								<h2><a href="single.html">Velozes & Furiosos 7</a></h2>
+								<span class="year-info"><a href="#">2015</a></span>
+							</div>
+							<div class="descricao">
+								Após os acontecimentos em Londres, Dom (Vin Diesel), Brian (Paul Walker), Letty (Michelle Rodriguez) e o resto da equipe...
+							</div>
+							<div class="opcoes">
+								<div class="stars-info"><img src="img/stars2.png">2/5</div>
+								<div class="tags-info">140min. <a href="#">Ação</a>, <a href="#">Corrida</a></div>
+								<a href="single.html" class="btn-assistir-info">Assistir Agora</a>
+							</div>
+						</div>
+						<a href="single.html"></a>
+					</div>
+					<a href="single.html">
+						<img class="img" src="http://www.eonline.com/eol_images/Entire_Site/2015110//rs_634x938-150210050344-Velozes_e_Furiosos_7.jpg" alt="">
+					</a>
+				</div>
+			</li>
+			<li id="filme_4">
+				<div class="cover">
+					<div class="play" style="opacity: 0.8;">
+						<div id="detalhes" class="detalhes d-right">
+							<div class="seta"></div>
+							<div class="topo">
+								<h2><a href="">Vingadores: Era de Ultron</a></h2>
+								<span class="year-info"><a href="#">2015</a></span>
+							</div>
+							<div class="descricao">
+								Os Estúdios Marvel apresentam Vingadores: Era de Ultron, a sequência épica do maior filme de super-heróis de todos os tempos. Quando Tony Stark tenta reiniciar um programa de manutenção de paz, as coisas não dão certo e os...
+							</div>
+							<div class="opcoes">
+								<div class="stars-info"><img src="img/stars2.png">2/5</div>
+								<div class="tags-info">141min. <a href="#">Ação</a>, <a href="#">Aventura</a></div>
+								<a href="single.html" class="btn-assistir-info">Assistir Agora</a>
+							</div>
+						</div>
+						<a href="single.html"></a>
+					</div>
+					<a href="single.html">
+						<img class="img" src="http://i1.wp.com/bitcast-a-sm.bitgravity.com/slashfilm/wp/wp-content/images/International-Avengers-Age-of-Ultron-Poster-700x989.jpg?resize=700%2C989" alt="">
+					</a>
+				</div>
+			</li>
+			<li id="filme_5">
+				<div class="cover">
+					<div class="play" style="opacity: 0.8;">
+						<div id="detalhes" class="detalhes">
+							<div class="seta"></div>
+							<div class="topo">
+								<h2><a href="single.html">Sniper Americano</a></h2>
+								<span class="year-info"><a href="#">2015</a></span>
+							</div>
+							<div class="descricao">
+								Adaptado do livro American Sniper: The Autobiography of the Most Lethal Sniper in U.S. Militar History, este filme conta a história real de Chris Kyle (Bradley Cooper), um atirador de elite das forças especiais da marinha americana. Durante cerca de dez anos...
+							</div>
+							<div class="opcoes">
+								<div class="stars-info"><img src="img/stars2.png">2/5</div>
+								<div class="tags-info">132min. <a href="#">Ação</a>, <a href="#">Drama</a></div>
+								<a href="single.html" class="btn-assistir-info">Assistir Agora</a>
+							</div>
+						</div>
+						<a href="single.html"></a>
+					</div>
+					<a href="http://chegapraka.com.br/filmes/filme/173/house-of-cards">
+						<img class="img" src="http://www.filmesinc.com/wp-content/uploads/2015/03/snider-americano-poster.jpg" alt="">
+					</a>
+				</div>
+			</li>
+			<div class="cpk"></div>
+		</div> 
+	</div>
+	
+<div class="BoxTrilhos navegacao clearfix">	
+	<div class="titulo" id="novidades">
+		<a name="novidades">
+			<h2>Novidades</h2>
+		</a>
+		<span class="fio"></span>
+	</div>
+	
+	<ul class="agrupador clearfix">	
+		<li class="item">
+			<article class="fl">					
+				<div class="componentesTrilhos " data-filme-index="1" data-filme-generos="Comédia" data-filme-titulo="O grande Lebowski" data-filme-url="/filme/o-grande-lebowski/">
+					<a href="/filme/o-grande-lebowski/" class="ico play-trilhos rpl">play</a>	
+					<span class="seta"></span>
+					<div class="fnd">
+						<div class="opcoes-filme">
+							<header class="fix cl">
+								<h3>
+									<a href="/filme/o-grande-lebowski/" title="O grande Lebowski">O grande Lebowski</a>
+								</h3>
+								<p class="faixa-etaria fl faixa-etaria-14">14</p>
+								<p class="duracao fl">
+									114 min - 1998 - Estados Unidos, Reino Unido					
+								</p>
+							</header>
+							<div class="descricao fix cl">
+								<ul class="composicao-filme">
+									<li><strong>Elenco</strong>:
+										<a href="/atores-e-diretores/ator/jeff-bridges/" title="Jeff Bridges">Jeff Bridges</a>,&nbsp						
+										<a href="/atores-e-diretores/ator/john-goodman/" title="John Goodman">John Goodman</a>		
+									</li>
+									<li><strong>Diretor</strong>:
+										<a href="/atores-e-diretores/diretor/joel-coen/" title="Joel Coen">Joel Coen</a>
+									</li>				
+									<li><strong>Gêneros</strong>:
+										<a href="/generos/comedia/" title="Comédia">Comédia</a>					
+									</li>
+								</ul>
+								<p class="sinopse">Conhecido como “O Cara”, Jeff Lebowski é um desocupado. Porém é confundido com um milionário da Califórnia que possui o mesmo sobrenome. Logo se vê envolvido com bandidos, detetives, sequestradores, e com a polícia.  Com ajuda de seu melhor amigo, Walter, tentará sair dessa situação.</p>				
+								<a href="/filme/o-grande-lebowski/" title="assistir agora" class="bt fl">
+									<span class="ico-seta">assistir agora</span>
+								</a>					
+								<p class="disponivel-data fl">
+									<strong>DISPONÍVEL ATÉ</strong>30/04/2016
+								</p>
+							</div>
+							<footer class="fix cl">
+								<ul class="fix duplo">
+									<li class="fl assistir-mais-tarde excluir">
+										<a href="javascript:;" title="assistir mais tarde"
+										data-href="/meu-telecine-play/assistir-mais-tarde/o-grande-lebowski/"
+										id="assistir-mais-tarde"
+										>assistir mais tarde</a>
+									</li>
+									<li class="fl sobre-filme"><a href="/filme/o-grande-lebowski/#DescricaoFilme" title="sobre o filme" class="">sobre o filme</a></li>
+								</ul>
+							</footer>
+							
+							<div class="msg_padrao msg_filme_adicionado fix off" id="">
+								<a href="javascript:;" class="fechar_lightbox_excluir_filme ico rpl fr close">fechar sem salvar</a>
+								<div class="txt_mod">
+									<p class="cl">Filme adicionado à lista para ver mais tarde com sucesso!</p>
+									<a href="/meu-telecine-play/assistir-mais-tarde/" class="fix">Ver minha lista » </a>
+								</div>
+							</div>
+
+							<div class="msg_padrao excluir_filme fix off" id="6797">
+								<a href="javascript:;" class="fechar_lightbox_excluir_filme ico rpl fr close">fechar sem salvar</a>
+								<p class="cl">Tem certeza que deseja <strong>excluir</strong> esse filme da lista?</p>
+								<a class="bt fl excluir" title="excluir" href="javascript:;">excluir</a>
+								<a class="bt gray fl close" title="cancelar" href="javascript:;">cancelar</a>
+							</div><!-- .excluir_filme -->
+						</div>
+					</div>
+				</div>
+				<img src="http://vod.img.estaticos.tv.br/media/309599ba09984ca9e45383dc9a6d9892/2015/4/28/40c0d10989d1075f180df17c9da3e80c.jpeg" alt="" class="thumb_trilho" />					
+			</article>
+		</li>
+	</ul>
+</div>
+
+
+        
+<div class="publicidade fix cl">
+    <span>publicidade</span>      
+</div>  
+
+    <div class="container">
+        <div class="BoxTops grid_300 fl">
+    <div class="titulo">
+        <h2>Top atores</h2>
+        <span class="fio"></span>
+    </div>
+    <ul>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/ator/angelina-jolie/">
+            
+                <span class="numero fl">1</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/media/imagens/b828d469d81c4dd6aa434f49ab205267.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Angelina Jolie</strong>
+            </a>
+        </li>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/ator/vin-diesel/">
+            
+                <span class="numero fl">2</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/media/imagens/cdfb6e3b8f914084bc6d0a65897ce63e.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Vin Diesel</strong>
+            </a>
+        </li>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/ator/paul-walker/">
+            
+                <span class="numero fl">3</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/media/imagens/a9caf3bb9fa943e68e3b4a699e4c6332.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Paul Walker</strong>
+            </a>
+        </li>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/ator/arnold-schwarzenegger/">
+            
+                <span class="numero fl">4</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/media/imagens/c04177a26e9c47ff9dc596ef502af04f.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Arnold Schwarzenegger</strong>
+            </a>
+        </li>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/ator/eddie-murphy/">
+            
+                <span class="numero fl">5</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/static/uploaded/imagens/4a52f85295c5402e8e8b4a6ba72122dc.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Eddie Murphy</strong>
+            </a>
+        </li>
+    
+    </ul>
+    <p class="vermais"><a href="/atores-e-diretores/?tipo=atores" title="ver todos os atores">ver todos os atores <span>»</span></a></p>
+</div>
+
+        <div class="BoxTops grid_300 fl">
+    <div class="titulo">
+        <h2>Top diretores</h2>
+        <span class="fio"></span>
+    </div>
+    <ul>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/diretor/steven-spielberg/">
+            
+                <span class="numero fl">1</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/static/uploaded/imagens/a77eb4c8c4d74ff393645390c2e9fcc0.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Steven Spielberg</strong>
+            </a>
+        </li>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/diretor/woody-allen/">
+            
+                <span class="numero fl">2</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/media/imagens/31360d8325fb470d8cd94cc9e8fe47d4.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Woody Allen</strong>
+            </a>
+        </li>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/diretor/lars-von-trier/">
+            
+                <span class="numero fl">3</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/media/imagens/8e1dddb46e7341d0a46f0a7b93e49eb6.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Lars Von Trier</strong>
+            </a>
+        </li>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/diretor/quentin-tarantino/">
+            
+                <span class="numero fl">4</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/media/imagens/220531f26c564cb1a9eedfd67d42276b.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Quentin Tarantino</strong>
+            </a>
+        </li>
+    
+        <li>
+            
+            <a href="/atores-e-diretores/diretor/mark-steven-johnson/">
+            
+                <span class="numero fl">5</span>
+                <span class="fl crop"><img src="http://vod.img.estaticos.tv.br/media/imagens/00170516e6594379934811a653690a03.jpeg" alt="" class="fl" /></span>
+                <strong class="desc fl">Mark Steven Johnson</strong>
+            </a>
+        </li>
+    
+    </ul>
+    <p class="vermais"><a href="/atores-e-diretores/?tipo=diretores" title="ver todos os diretores">ver todos os diretores <span>»</span></a></p>
+</div>
+
+        
+  <script type="text/javascript" src="js/embreve.js"></script>
+
+  <div class="BoxEmBreve grid_300 fix fr">
+     <div class="titulo">
+          <h2>Em Breve</h2>
+          <span class="fio"></span>
+     </div>
+     <div class="EmBreveCarrossel  fix">
+         <ul id="EmbreveCarrossel">
+          
+             <li class="fl fix">
+                  <div class="filme fix">
+                    
+                        <a href="http://telecine.globo.com/filmes/vizinhos/" target="_blank" class="fix">
+                            <img src="http://media.telecineplay.com.br/cache/embreve_card/76fc86fb5b734b31aa333c2449dfc8d7_card.jpeg" alt="" class="fl" />
+                            <span class="fr txt">
+                                <strong class="descfilme">Vizinhos </strong>
+                                <img src="img/embreve-tplay.png" alt="" />
+                                <span class="diaestreia">Estreia, dia 01</span>
+                            </span>
+                        </a>
+                    
+                  </div>
+                  <div class="canais fix">
+                      
+                        
+                        <p class="fl bd">
+                            <img class="cl" src="http://media.telecineplay.com.br/cache/canais/b5dfbf08a7f5441d87f379315452bf4b_logo.png"
+                            alt="Telecine Premium" /><br />
+                            Sabado, dia 30 | 22h
+                        </p>
+                        
+                      
+                        
+                        <p class="fl bd">
+                            <img class="cl" src="http://media.telecineplay.com.br/cache/canais/6642ec36516b4f9c9679332ca23ab6f6_logo.png"
+                            alt="Telecine Pipoca" /><br />
+                            Domingo, dia 31 | 20h
+                        </p>
+                        
+                      
+                  </div>
+              </li>
+            
+         </ul>
+     </div>
+     <div class="embreve-control fix home">
+         <a href="javascript:;" class="prev rpl fl">anterior</a>
+         <a href="javascript:;" class="next rpl fl">próximo</a>
+     </div>
+  </div>
+
+
+    </div>
+
+    <div class="container">
+        
+    <div class="BoxNovidades fl">
+        <div class="titulo">
+            <h2>Mais do Telecine</h2>
+            <span class="fio"></span>
+        </div>
+    	
+        <article class="fl ">
+            <a href="http://www.cineplayers.com/noticia/confira-o-novo-trailer-do-reboot-de-quarteto-fantastico/11651" class="fix" target="_blank">
+                <span class="crop"><img src="http://media.telecineplay.com.br/novidades/d2c93f7a1ca04dc0a7b46dd267b3ccc0.jpeg" alt="" /></span>
+                <span class="desc">Confira o trailer do reboot do clássico da Marvel: Quarteto Fantástico</span>
+            </a>
+        </article>
+     	
+        <article class="fl ">
+            <a href="http://telecine.globo.com/" class="fix" target="_blank">
+                <span class="crop"><img src="http://media.telecineplay.com.br/novidades/7793b2b4c19d4f7cbf4b7b0436831f88.jpeg" alt="" /></span>
+                <span class="desc">Que tal um cineminha hoje? Veja os filmes em cartaz nas principais salas de cinema</span>
+            </a>
+        </article>
+     	
+        <article class="fl ">
+            <a href="http://telecine.globo.com/vaaocinema" class="fix" target="_blank">
+                <span class="crop"><img src="http://media.telecineplay.com.br/novidades/8f133d5d3ca1484880dd1216d0db28a7.jpeg" alt="" /></span>
+                <span class="desc">Fique por dentro das novidades do mundo do cinema</span>
+            </a>
+        </article>
+     	
+        <article class="fl ">
+            <a href="http://telecine.globo.com/programacao/" class="fix" target="_blank">
+                <span class="crop"><img src="http://media.telecineplay.com.br/novidades/0818c93b84da4f128231e8462316fa49.jpeg" alt="" /></span>
+                <span class="desc">Se liga na programação! Confira os destaques da semana nos canais Telecine</span>
+            </a>
+        </article>
+     	
+        <article class="fl last">
+            <a href="http://www.cineplayers.com/noticia/assista-ao-primeiro-trailer-de-maze-runner-prova-de-fogo/11638" class="fix" target="_blank">
+                <span class="crop"><img src="http://media.telecineplay.com.br/novidades/f8c1f4afe3be4f4ab5c10b67493bf157.jpeg" alt="" /></span>
+                <span class="desc">Assista ao primeiro trailer da sequência de Maze Runner: Prova de fogo </span>
+            </a>
+        </article>
+     	
+    </div>
+
+
+    </div>
+
+    <aside class="container">
+       
+
+  
+    <aside class="BoxAplicativos grid_300 fl">
+       <div class="titulo">
+            <h2>Especiais</h2>
+            <span class="fio"></span>
+       </div>
+       
+          
+             <article class="fix primeiro">
+                 <a href="http://telecineplay.com.br/especial/disney/" class="crop fix">
+                    
+                      <img src="http://media.telecineplay.com.br/cache/box_extra/f886e0ecd65a44c9bbe7ff6e49937b13_card.jpeg" alt="Disney" />
+                    
+                      <div class="txt">
+                          <strong class="cl">Disney</strong>
+                          <span class="cl">Dos clássicos aos mais  recentes, filmes para toda a família assistir</span>
+                      </div>
+                 </a>
+             </article>
+          
+       
+          
+             <article class="fix ">
+                 <a href="http://telecineplay.com.br/especial/filmes-nacionais/" class="crop fix">
+                    
+                      <img src="http://media.telecineplay.com.br/cache/box_extra/d99df518fdfd4964b37dcf6041bfa472_card.jpeg" alt="Filmes nacionais" />
+                    
+                      <div class="txt">
+                          <strong class="cl">Filmes nacionais</strong>
+                          <span class="cl">O melhor do cinema nacional, com os últimos lançamentos e sucessos de bilheteria </span>
+                      </div>
+                 </a>
+             </article>
+          
+       
+          
+       
+    </aside>
+  
+
+
+       <div class="BoxFacebook grid_300 fl">
+    <div class="titulo">
+        <h2>Facebook</h2>
+        <span class="fio"></span>
+    </div>
+    <div id="fb-root"></div>
+    <div class="fb-like-box" data-href="https://www.facebook.com/redetelecine" data-width="300" data-show-faces="true" data-stream="false" data-header="false"></div>
+</div><!-- .BoxFacebook -->
+
+       ﻿<div class="publicidade grid_300 fr">
+    <span>publicidade</span>
+    <script type="text/javascript" language="JavaScript" >
+        OAS_PrintGLB();
+    </script>
+    <script type="text/javascript" language="JavaScript" >
+        OAS_AD('Position1');
+    </script>
+    <script type="text/javascript">
+        $('.publicidade.grid_300 > #banner_full').click(function(e) { 
+            _gaq.push(["h._trackEvent", "Clique - Calhau Home", 'Telecine Play', 'inferior', 0, false]);
+        });
+    </script>
+</div>
+    </aside><!-- .container -->
+
+	</div>
+	
+		
+<footer id="footer" class="fix">
+	<aside class="container_960 fix">
+
+		<div class="foot fl fix generos">
+			<h5>Gêneros</h5>
+			<div class="lista first">
+				<ul>
+				
+					<li><a href="/generos/infantil/" title="Infantil">Infantil</a></li>
+				
+					<li><a href="/generos/acao/" title="Ação">Ação</a></li>
+				
+					<li><a href="/generos/animacao/" title="Animação">Animação</a></li>
+				
+					<li><a href="/generos/aventura/" title="Aventura">Aventura</a></li>
+				
+					<li><a href="/generos/biografia/" title="Biografia">Biografia</a></li>
+				
+					<li><a href="/generos/comedia/" title="Comédia">Comédia</a></li>
+				
+					<li><a href="/generos/documentario/" title="Documentário">Documentário</a></li>
+				
+					<li><a href="/generos/drama/" title="Drama">Drama</a></li>
+				
+					<li><a href="/generos/fantasia/" title="Fantasia">Fantasia</a></li>
+				
+					<li><a href="/generos/ficcao-cientifica/" title="Ficção-Científica">Ficção-Científica</a></li>
+				
+					<li><a href="/generos/guerra/" title="Guerra">Guerra</a></li>
+				
+					<li><a href="/generos/musical/" title="Musical">Musical</a></li>
+				
+					<li><a href="/generos/policial/" title="Policial">Policial</a></li>
+				
+					<li><a href="/generos/romance/" title="Romance">Romance</a></li>
+				
+					<li><a href="/generos/suspense/" title="Suspense">Suspense</a></li>
+				
+					<li><a href="/generos/terrorhorror/" title="Terror/Horror">Terror/Horror</a></li>
+				
+					<li><a href="/generos/western/" title="Western">Western</a></li>
+				
+					<li><a href="/generos/epico/" title="Épico">Épico</a></li>
+				
+					<li><a href="/generos/terror/" title="Terror">Terror</a></li>
+				
+				</ul>
+			</div>
+		</div>
+
+		<div class="foot fl fix alltops">
+
+			<div class="lista ">
+
+				<div class="top fl">
+					<h5>
+						<a href="/atores-e-diretores/?tipo=atores" title="Todos os Atores" class="destacado">
+							<span class="descricao">Top Atores</span>
+							<span class="icone">»</span>
+						</a>
+					</h5>
+					<ol>
+						
+						<li><a href="/atores-e-diretores/ator/angelina-jolie/" title="Angelina Jolie">1. Angelina Jolie</a></li>
+						
+						<li><a href="/atores-e-diretores/ator/vin-diesel/" title="Vin Diesel">2. Vin Diesel</a></li>
+						
+						<li><a href="/atores-e-diretores/ator/paul-walker/" title="Paul Walker">3. Paul Walker</a></li>
+						
+						<li><a href="/atores-e-diretores/ator/arnold-schwarzenegger/" title="Arnold Schwarzenegger">4. Arnold Schwarzenegger</a></li>
+						
+						<li><a href="/atores-e-diretores/ator/eddie-murphy/" title="Eddie Murphy">5. Eddie Murphy</a></li>
+						
+					</ol>
+					<a href="/atores-e-diretores/?tipo=atores" title="Todos os atores" class="destacado alternado">
+						<span class="descricao">Ver todos os atores</span>
+						<span class="icone">»</span>
+					</a>
+				</div>
+				<div class="top fl">
+					<h5>
+						<a href="/atores-e-diretores/?tipo=diretores" title="Todos os Diretores" class="destacado">
+							<span class="descricao">Top Diretores</span>
+							<span class="icone">»</span>
+						</a>
+					</h5>
+					<ol>
+						
+						<li><a href="/atores-e-diretores/diretor/steven-spielberg/" title="Steven Spielberg">1. Steven Spielberg</a></li>
+						
+						<li><a href="/atores-e-diretores/diretor/woody-allen/" title="Woody Allen">2. Woody Allen</a></li>
+						
+						<li><a href="/atores-e-diretores/diretor/lars-von-trier/" title="Lars Von Trier">3. Lars Von Trier</a></li>
+						
+						<li><a href="/atores-e-diretores/diretor/quentin-tarantino/" title="Quentin Tarantino">4. Quentin Tarantino</a></li>
+						
+						<li><a href="/atores-e-diretores/diretor/mark-steven-johnson/" title="Mark Steven Johnson">5. Mark Steven Johnson</a></li>
+						
+					</ol>
+					<a href="/atores-e-diretores/?tipo=diretores" title="Todos os atores e diretores" class="destacado alternado">
+						<span class="descricao">Ver todos os diretores</span>
+						<span class="icone">»</span>
+					</a>
+				</div>
+				<div class="cl top-filmes">
+					<h5>Top Filmes</h5>
+					<ol>
+						
+						<li><a href="/filme/divergente/" title="Divergente">1. Divergente</a></li>
+						
+						<li><a href="/filme/frozen-uma-aventura-congelante/" title="Frozen: uma aventura congelante">2. Frozen: uma aventura congelante</a></li>
+						
+						<li><a href="/filme/intocaveis/" title="Intocáveis">3. Intocáveis</a></li>
+						
+						<li><a href="/filme/truque-de-mestre/" title="Truque de mestre">4. Truque de mestre</a></li>
+						
+						<li><a href="/filme/o-lado-bom-da-vida/" title="O lado bom da vida">5. O lado bom da vida</a></li>
+						
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="foot fl fix especiais">
+			<h5>
+				<a href="/especiais/" title="Todos os especiais" class="destacado">
+					<span class="descricao">Especiais</span>
+					<span class="icone">»</span>
+				</a>
+			</h5>
+			<div class="lista">
+				<ul>
+					
+					<li>
+						<a href="/especial/lancamentos/" title="Especial Lançamentos">Lançamentos</a>
+					</li>
+					
+					<li>
+						<a href="/especial/menu-degustacao-telecine-play/" title="Especial Menu Degustação Telecine Play">Menu Degustação Telecine Play</a>
+					</li>
+					
+					<li>
+						<a href="/especial/baby-dove/" title="Especial Baby Dove">Baby Dove</a>
+					</li>
+					
+					<li>
+						<a href="/especial/filmes-surpreendentes/" title="Especial Filmes Surpreendentes">Filmes Surpreendentes</a>
+					</li>
+					
+					<li>
+						<a href="/especial/disney/" title="Especial Disney">Disney</a>
+					</li>
+					
+					<li>
+						<a href="/especial/amamos-80s-e-90s/" title="Especial Amamos 80&#39;s e 90&#39;s ">Amamos 80&#39;s e 90&#39;s </a>
+					</li>
+					
+					<li>
+						<a href="/especial/mulheres-em-acao/" title="Especial Mulheres em ação">Mulheres em ação</a>
+					</li>
+					
+					<li>
+						<a href="/especial/transformers/" title="Especial Saga Transformers">Saga Transformers</a>
+					</li>
+					
+					<li>
+						<a href="/especial/dicas-da-equipe-telecine/" title="Especial Dicas da equipe Telecine">Dicas da equipe Telecine</a>
+					</li>
+					
+					<li>
+						<a href="/especial/especial-sequencias-de-sucesso/" title="Especial Sequências de sucesso">Sequências de sucesso</a>
+					</li>
+					
+					<li>
+						<a href="/especial/filmes-nacionais/" title="Especial Filmes nacionais">Filmes nacionais</a>
+					</li>
+					
+					<li>
+						<a href="/especiais/" title="Todos os especiais" class="destacado alternado">
+							<span class="descricao">Ver todos os especiais</span>
+							<span class="icone">»</span>
+						</a>
+					</li>
+				</ul>
+				<h5>Institucional</h5>
+				<ul>
+					<li><a href="/sobre-o-telecine-play" title="Conheça o Telecine Play">Conheça o Telecine Play</a></li>
+					<li><a href="/perguntas_frequentes" title="Perguntas e Respostas">Perguntas e Respostas</a></li>
+					
+						<li><a href="#modal_login" title="Entrar" class="link link_login">Entrar</a></li>
+					
+					<li><a href="/fale_conosco" title="Fale Conosco">Fale Conosco</a></li>
+
+					
+				</ul>
+			</div>
+		</div>
+		<div class="foot fl fix sites">
+			<h5>Sites Globosat</h5>
+			<div class="lista">
+				<ul>
+					<li class="fl"><a href="http://telecine.globo.com/" target="_blank" title="Telecine"><img src="img/footer-telecine.png" alt="" /></a></li>
+					<li class="fl"><a href="http://globosatplay.globo.com/" target="_blank" title="Globosat Play"><img src="img/footer-globosat-play.png" alt="" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+</footer>
+
+	
+	<div class="modal_static" id="modal_exclusivo" >
+		<div id="mask"></div>
+
+		<div class="ExclusivoAssinantes fix">
+			<a href='javascript:;' class='btx' title='fechar' id='fechar_lightbox'>x</a>
+			<div class="titulo titulo-login">
+				<h2>Quer comecar a assistir? Siga os passos abaixo!</h2>
+			</div>
+
+			<div class="content fix">
+				<ul class="passos">
+					<li class="passo passo-1">
+						<span class="agrupador-imagem">
+							<span class="icone icone-passo-1"></span>
+						</span>
+						<span class="agrupador">
+							<span class="titulo-passo">Assine os canais Telecine</span>
+							<span class="descricao-passo">O Telecine Play é gratuito para assinantes dos 6 canais da Rede Telecine nas operadoras parceiras. Quer se tornar um assinante Telecine? <a class="link-descricao-1" href="/assine">Assine agora.</a></span>
+						</span>
+					</li>
+					<li class="passo passo-2">
+						<span class="agrupador-imagem">
+							<span class="icone icone-passo-2"></span>
+						</span>
+
+						<span class="agrupador">
+							<span class="titulo-passo">Cadastre-se na operadora</span>
+							<span class="descricao-passo">Cadastre-se na sua operadora abaixo e use esse login para entrar no Telecine Play. As operadoras disponíveis são:
+								<a target="_blank" class="link-descricao-2" href="http://www.blue.tv.br/">Blue TV</a>,
+								<a target="_blank" class="link-descricao-2" href="https://minhaclarotv.claro.com.br/">Claro TV</a>,
+								<a target="_blank" class="link-descricao-2" href="http://www.gvt.com.br/portal/site/PortalGVT/template.LOGIN#cadastro">GVT</a>,
+								<a target="_blank" class="link-descricao-2" href="http://www.multiplaytelecom.com.br/cliente/index.php?option=com_users&task=login">Multiplay</a>,
+								<a target="_blank" class="link-descricao-2" href="https://www.netcombo.com.br/netPortalWEB/appmanager/portal/desktop?_nfpb=true&_pageLabel=cadastro_page">NET</a>,
+								<a target="_blank" class="link-descricao-2" href="http://netfoz.tv.br/faq.asp">NET Foz</a>,
+								<a target="_blank" class="link-descricao-2" href="https://minha.oi.com.br/portal/site/MinhaOi/CadastrarUsuario">Oi TV</a>,
+								<a target="_blank" class="link-descricao-2" href="http://www.ormcabo.com.br/cadastr_usuario.asp">ORM Cabo</a>,
+								<a target="_blank" class="link-descricao-2" href="http://www.sky.com.br/institucional/cadastro/usuariocpf.aspx">SKY</a>,
+								<a target="_blank" class="link-descricao-2" href="http://www.tvalphaville.com.br/telecineplay_pg">TV Alphaville</a> e
+								<a target="_blank" class="link-descricao-2" href="http://www.tvantagens.com.br/iniciar-cadastro.action">Vivo TV</a>.
+							</span>
+						</span>
+					</li>
+					<li class="passo passo-3">
+						<span class="agrupador-imagem">
+							<span class="icone icone-passo-3"></span>
+						</span>
+						<span class="agrupador">
+							<span class="titulo-passo">Comece a assistir!</span>
+							<span class="descricao-passo">Pronto, seu login foi criado! Agora você pode assistir ao melhor do cinema no Telecine Play. <br> <a href="javascript:;" title="fazer login" class="link_login link-descricao-3">Faça o login</a> e dê o play! </span>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<div class="acao">
+				<a href="" title="fazer login" class="bt big link_login link-descricao-0">Se você já possui cadastro, faça o login</a>
+			</div>
+			
+		</div>
+</div>
+
+
+
+	<div class="modal_static" id="modal_lightboxlogin" >
+	<div id="mask"></div>
+	<div class="LightboxLogin fix">
+		<a href='javascript:;' class='btx' title='fechar' id='fechar_lightbox'>x</a>
+	</div>
+</div>
+
+
+
+
+	
+<div class="modal_static" id="TapumeMobile">
+    <div id="mask"></div>
+
+    <div class="mobile_tapume">
+        <a href='javascript:;' class='btx' title='fechar' id='fechar_lightbox'>x</a>
+
+        <div class="content fix">
+           <a href="/sobre-o-telecine-play" ><img src="img/tapume-devices.jpg" /></a>
+
+        </div>
+    </div>
+</div><!-- #modal_contar_amigos -->
+
+	<div class="modal_static" id="modal_login">
+    <div id="mask"></div>
+    
+    <div id="ModalLogin" class="fix">
+        <a href='javascript:;' class='btx rpl' title='fechar' id='fechar_lightbox'>fechar</a> 
+    </div>   
+</div><!-- #modal_login -->
+	<div class="msg_padrao messages fix off" id="padrao-alertas">
+		<a href="javascript:;" class="fechar_lightbox_excluir_filme ico rpl fr close">fechar</a>
+		<div class="txt_mod_def cl">
+			<p class="cl"></p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var _sf_async_config={uid:17914,domain:"telecineplay.com.br"};
+		(function(){
+		  function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+			   "js/chartbeat.js");
+			document.body.appendChild(e);
+		  }
+		  var oldonload = window.onload;
+		  window.onload = (typeof window.onload != 'function') ?
+			 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+		})();
+	</script>
+
+	
+	<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/8678.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+	</script>
+	<script type="text/javascript" src="js/social.js"></script>
+	
+	<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+        appId: 311258008939662,
+        channelUrl: "http://telecineplay.com.br/social/facebook-channel/",
+        oauth: true,
+        cookie: true,
+        
+        
+        status:true,
+        xfbml:true
+    });
+
+    // se por um acaso não usar jQuery, utilizamos a forma nativa
+    var event, eventName;
+    eventName = 'facebookInit';
+    if (Event) {
+        event = new Event(eventName);
+        // document.dispatchEvent(event)
+    } else {
+        if (document.createEvent) {
+            event = document.createEvent('Event');
+            event.initEvent(eventName);
+            // document.dispatchEvent(event);
+        } else {
+            event = document.createEventObject();
+            event.eventType = eventName;
+        }
+    }
+
+    
+		
+			
+			if(typeof VodFacebook != "undefined"){
+				VodFacebook.init();
+				// Mensurar Likes nos filmes
+				FB.Event.subscribe('edge.create', function(targetUrl) {
+					_gaq.push(['h._trackSocial', 'facebook', 'like', targetUrl]);
+				});
+			}
+		
+	
+
+    if (document.createEvent) {
+        document.dispatchEvent(event);
+    } else {
+        document.fireEvent("on" + event.eventType, event);
+    }
+}
+</script>
+
+	<script>
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/pt_br/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+	<!-- Stormlytics -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		
+			
+				_paq.push(['trackPageView', document.getElementsByTagName("title")[0].innerHTML, {
+					'operadora':'visitante'
+				}]);
+			
+		
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u = "http://api.analytics.stormsec.com.br/";
+			_paq.push(['setTrackerUrl', u+'web']);
+			_paq.push(['setSiteId', 1]);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+			g.defer=true; g.async=true; g.src=u+'js/index.js'; s.parentNode.insertBefore(g,s);
+		})();
+	</script>
+	<noscript>
+		<p><img src="http://api.analytics.stormsec.com.br/js/index.js" style="border:0;" alt="" /></p>
+	</noscript>
+	<!-- End Stormlytics Code -->
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WT5T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-WT5T');</script>
+<!-- End Google Tag Manager -->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":1,"licenseKey":"7217d473ba","agent":"js-agent.newrelic.com/nr-632.min.js","transactionName":"blVSYUpZCEdXV01RXFcfdkBWWxJdWVoWTENVUUkbXF0FW0RVTVdBSgpvR11cD0ZTV01nVVZCb1hXWg9YUw==","applicationID":"3694453","errorBeacon":"bam.nr-data.net","applicationTime":1953}</script></body>
+</html>

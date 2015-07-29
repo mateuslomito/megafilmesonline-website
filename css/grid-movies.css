@@ -1,0 +1,277 @@
+
+/*----------------------estilização do input file--------------------*/
+.file {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+}       
+
+.file input[type=file] {
+	cursor:pointer;
+	font-size: 100px;
+	height: 40px;
+	filter: alpha(opacity=1);
+	-moz-opacity: 0.01;
+	opacity: 0.01;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.file .button {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: 5px;
+	padding: 10px 0px;
+	width:250px;
+	background:#EEE;
+	text-align:center;
+}
+.file .button:hover {background:#333; color:#FFF;}
+/*-----------------------------------------------------------------------------*/
+/*definições-----------------------------------------------------------*/
+
+/*alertas*/
+.ct_alertas{float:right;}
+.ct_alertas .alertas{position:absolute; top:70px; width:200px; margin-left:-200px;}
+
+.ct_alertas .alertas .alert{padding:4px; background:#F5F5F5; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border:1px solid #DDD; margin-bottom:5px; overflow:hidden}
+.ct_alertas .alertas .alert .img{float:left; width:50px; overflow:hidden;}
+.ct_alertas .alertas .alert .img img{width:100%;}
+.ct_alertas .alertas .alert .texto{float:left; width:130px; margin:5px; font-size:11px; padding:5px 0;}
+.ct_alertas .alertas .alert .bt-fechar{width:12px; height:12px; background:url(../images/bt-fechar-att.png) no-repeat center center; padding:2px; position:absolute; margin-left:175px; display:none; cursor:pointer;}
+	.ct_alertas .alertas .alert .bt-fechar:hover{background-color:#EEE;}
+	.ct_alertas .alertas .alert:hover .bt-fechar{display:block;}
+/*topo-----------------------------------------------------------*/
+
+
+.btn-assistir-info {    padding: 8px 15px 8px 30px;    background: #F1352E url(../img/icn-btn-now.png) no-repeat center left 10px;    color: #ffffff;    font: 600 13px 'Open Sans', Arial;
+    margin: 5px 20px 15px 20px;    float: left;}
+
+.btn-assistir-info:hover {
+    background-color: #E4211A;
+}
+
+.year-info a {
+    font-size: 13px;    
+	font-weight: bold;    
+    padding: 19px 0px 0px 8px;    
+    float: left;
+    width: 40px;                                    
+	color: #F4F4F4;      
+	font: 600 13px 'Opens Sans', Arial;
+}
+
+.year-info a:hover {
+     text-decoration: underline;
+}
+
+.stars-info {
+    padding: 0px 0px 0px 20px;    color: #F4F4F4;    font: 600 13px 'Opens Sans', Arial;    display: block;    text-shadow: 1px 1px 1px #333333;
+}
+
+.stars-info img {
+    margin: 0px 5px -2px 0;
+}
+
+.tags-info {    color: #F4F4F4;    font: 600 13px 'Opens Sans', Arial;    display: block;
+    padding: 10px 20px;
+}
+
+.tags-info a {
+    color: #F4F4F4;
+}
+
+.tags-info a:hover {
+    text-decoration: underline;
+}
+
+	#makeMeScrollable
+	{
+	
+		position: relative;
+		height: 350px;
+}
+	#makeMeScrollable .cpk{border-left:1px solid #CCC; border-right:1px solid #EEE; margin: 0px 25px 0px -10px; height: 260px; float:left;}
+
+
+
+/*conteudo filmes-----------------------------------------------------------*/
+.ct-f-home{height:300px; }
+.ct-f-home .tt{width:15%; float:left; height:300px; text-align:right;}
+.ct-f-home .tt h1{margin-right:10px; margin-top:130px;}
+.ct-f-home .fl{float:left; width:85%;}
+
+.ct_filmes{overflow:hidden; margin:0 auto;}
+.ct_filmes li{width: 166px; margin: 0px 28px 0px 0px;height: 260px;  display:block; float:left;border: 2px solid #F7F7F7;}
+	.ct_filmes li:hover{border-color: #e5362f;}
+.ct_filmes li .cover{ overflow:hidden; height: 260px; width: 166px;}
+.ct_filmes li .cover .img{height: 260px; width: 166px;}
+.ct_filmes li .cover .play{width: 166px; height: 260px;  position:absolute;   display:none; cursor:pointer;transition: 000ms ease-out;    -moz-transition: 000ms ease-out;    -webkit-transition: 000ms ease-out;    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);}
+	.ct_filmes li:hover .play{
+    background: url(../img/btn-cover.png)no-repeat center;
+    transition: 000ms ease-out;    
+    -moz-transition: 000ms ease-out;    
+    -webkit-transition: 000ms ease-out;    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+}
+	.ct_filmes li .cover:hover .play{display:block;}
+.ct_filmes li .cover .play .detalhes{position:absolute; width: 260px;    margin-top: -2px; margin-left: 182px; display:none; cursor:auto; padding: 0px 0px 0px 0;background: rgba(20, 20, 20, 0.95);z-index: 99;}
+	.ct_filmes li .cover .play:hover .detalhes{display:block; }
+.ct_filmes li .cover .play .detalhes .seta{width: 17px; height: 280px; position:absolute; background: url(../img/seta.png) center top 30px no-repeat; margin-left: -15px; opacity: 0.95;}
+.ct_filmes li .cover .play .detalhes .topo{  color: #FFFFFF;   width: 260px;  float: left;}
+.ct_filmes li .cover .play .detalhes .topo h2 a{ font-size: 13px; font-weight: bold; padding: 20px 0px 10px 20px;display:block; width: 180px; float: left; color: #F4F4F4;    font: 600 13px 'Opens Sans', Arial;}
+.ct_filmes li .cover .play .detalhes .topo h2 a:hover{ text-decoration: underline;}
+.ct_filmes li .cover .play .detalhes .descricao{padding: 10px 20px; font-size: 12px; color: #ddd;}
+.ct_filmes li .cover .play .detalhes .descricao a{display:inline;}
+.ct_filmes li .cover .play .detalhes .descricao strong{display:block; margin-bottom:5px;}
+.ct_filmes li .cover .play .detalhes .descricao .info{font-weight:bolder; margin-top:5px;}
+.ct_filmes li .cover .play .detalhes .opcoes{
+    float: left;
+    width: 260px;
+}
+
+.detalhes .info .idade{display:inline-block; padding:3px; border:2px solid #CCC; width:20px; height:20px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; text-align:center; background:#EEE;}
+.add_lista{margin-top:60px; padding:5px 10px; background:url(../images/bt.png); display:inline-block; color:#FFF; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+.add_lista:hover{background-position:bottom; cursor:pointer;}
+
+.detalhes .ct_estrelas{width:110px; height:18px; position:absolute; font-size:12px; font-weight:bold;}
+.detalhes .estrelas{width:90px; height:18px; position:absolute; margin-top:3px;}
+.detalhes .estrelas .e{position:absolute; width:18px; height:18px; background:url(../images/estrela.png) no-repeat center; z-index:1; cursor:pointer;}
+.detalhes .estrelas .e2{margin-left:18px;}
+.detalhes .estrelas .e3{margin-left:36px;}
+.detalhes .estrelas .e4{margin-left:54px;}
+.detalhes .estrelas .e5{margin-left:72px;}
+.detalhes .estrelas .bk-e{ height:18px; background:#FC7E27; position:absolute;}
+.detalhes .estrelas .cla{padding:5px; border:1px solid #EEE; display:inline-block; background:#FC7E27; color:#FFF; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; position:absolute; margin-left:93px; margin-top:-2px;}
+
+
+.ct_filmes li .cover .play .d-right{margin-left: -275px;}
+.ct_filmes li .cover .play .d-right .seta{margin-left: 257px; background: url(../img/seta-r.png) center top 30px no-repeat;}
+
+
+
+.ct-dc-filme{width:310px; margin-left:20px; float:left;}
+.ct-dc-filme .detalhes li{display:block; overflow:hidden;}
+.ct-dc-filme .detalhes .descricao strong{display:block; margin-bottom:5px;}
+.ct-dc-filme .detalhes .descricao .info{font-weight:bolder; margin-top:5px;}
+.ct-dc-filme .detalhes .descricao .info .idade{display:inline-block; padding:3px; border:2px solid #CCC; width:20px; height:20px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; text-align:center; background:#EEE;}
+.ct-dc-filme .detalhes .opcoes{ padding:5px; font-size:12px; border-top:1px solid #CCC; margin-top:10px; height:90px;}
+.ct-dc-filme .desc-ep{margin-bottom:10px; font-size:13px;}
+.ct-dc-filme .desc-tp{margin-bottom:10px; margin-top:5px; font-size:13px;}
+.ct-dc-filme .desc-ep h1{font-size:18px; margin-bottom:5px;}
+
+
+.ct-filme{float:left; width:650px;}
+.ct-filme .nav-videos{overflow:hidden;}
+.ct-filme .nav-videos li{display:block; float:left; background:#FC7E27; margin-right:1px; border:1px solid #CCC; border-bottom:none; border-top-left-radius:10px; -moz-border-top-left-radius:10px; -webkit-border-top-left-radius:10px; border-top-right-radius:10px; -moz-border-top-right-radius:10px; -webkit-border-top-right-radius:10px; overflow:hidden;}
+.ct-filme .nav-videos li .atual{background-color:#666;}
+.ct-filme .nav-videos li a{display:block; padding:10px 10px 10px 40px; color:#FFF; text-decoration:none; background:url(../images/bt-player.png) no-repeat 10px}
+.ct-filme .video{border:1px solid #CCC; background:url(../images/loader.gif) no-repeat center #FFF; margin-bottom:10px; height:400px; overflow:hidden;}
+
+.ct-filme .report{float:right; margin-bottom:10px; background:#FFF; padding:5px 10px; border:1px solid #F80; color:#F60; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; cursor:pointer;}
+.ct-filme .report:hover{background:#FFF; color:#F80;}
+.at_ver{background:url(../images/backs/black50.png); width:650px; height:400px; position:absolute;}
+.at_ver .pb_ver{width:250px; height:250px; margin:75px auto; border:1px solid #FFCA95; background:#FFF;}
+.at_ver .pb_ver .ct_bt{padding:2px; background:#F80; position:absolute; cursor:pointer;}
+.at_ver .pb_ver .ct_bt .bt_fechar{width:10px; height:10px; background:url(../images/bt_fechar_a.png) no-repeat top;}
+.at_ver .pb_ver .ct_bt:hover .bt_fechar{background-position:bottom;}
+
+
+.ct-filme .episodios{margin:10px 0;}
+.ct-filme .episodios li{display:block;}
+.ct-filme .episodios li a{display:block; text-decoration:none; padding:10px 10px 10px 18px; border-top:1px solid #EEE;}
+.ct-filme .episodios li a:hover{background:#EEE;}
+.ct-filme .episodios .ass a{background:#FFF;}
+.ct-filme .episodios li a img{position:absolute; margin-left:-12px; margin-top:2px;}
+.ct-filme .episodios li a span{float:right; font-size:12px; color:#222}
+.ct-filme .episodios li a span img{position:absolute; margin-left:-12px; margin-top:2px;}
+
+
+
+/*cadastro*/
+.ct-cadastro{width:500px; margin:0 auto; overflow:hidden;}
+.ct-cadastro .input{padding:10px; border:1px solid #DDD; margin-bottom:15px; color:#666; font-size:15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; width:450px;}
+.ct-cadastro label{position:absolute; margin-top:10px; margin-left:10px; font-size:15px; color:#999; cursor:auto;}
+.ct-cadastro .min{width:209px; float:left; display:block;}
+.ct-cadastro .min-m{margin-right:10px;}
+.ct-cadastro .ct-txt-min{float:left;}
+.ct-cadastro .bt-ct{padding:10px; border:1px solid #DDD; color:#FFF; font-size:15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; width:150px; background:#F80; cursor:pointer;}
+	.ct-cadastro .bt-ct:hover{background:#F70;}
+.ct-cadastro .ct-cd-conteiner{ border:1px solid #DDD; overflow:hidden; }
+.ct-cadastro .ct-cd-conteiner .local{border-bottom:1px solid #DDD; overflow:hidden; background:#FFF;}
+.ct-cadastro .ct-cd-conteiner .local li{ display:block; float:left; padding:15px 25px 15px 15px; height:20px; background:url(../images/local_cadastro.png) no-repeat right top; color:#AAA;}
+.ct-cadastro .ct-cd-conteiner .local .atual{font-size:15px; color:#F80; background:url(../images/local_cadastro_atual.png) no-repeat right top #EEE;}
+.ct-cadastro .ct-cd-conteiner .local .anterior{background:url(../images/local_cadastro_ant.png) no-repeat right top;}
+.ct-cadastro .ct-img-prefile{width:250px; margin:0 auto;}
+.ct-cadastro .ct-bt{border-top:1px solid #EEE; padding:5px 12px; margin-top:10px;}
+.ct-cadastro #preview_image img{width:250px; margin:0 auto; margin-top:20px; display:block;}
+/*conteudo filmes-----------------------------------------------------------*/
+
+
+/* You can alter this CSS in order to give Smooth Div Scroll your own look'n'feel */
+
+/* Invisible left hotspot */
+div.scrollingHotSpotLeft
+{
+	/* The hotspots have a minimum width of 100 pixels and if there is room the will grow
+    and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
+	width: 60px;
+	height: 260px;
+	/* There is a big background image and it's used to solve some problems I experienced
+    in Internet Explorer 6. */
+	background: rgba(0, 0, 0, 0.5) url(../img/seta-grid-l.png) no-repeat center;
+	position: absolute;
+	z-index: 200;
+	left: 0;
+	/*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
+	cursor: pointer;
+	top: 2px;
+}
+
+/* Visible left hotspot */
+div.scrollingHotSpotLeftVisible
+{
+	background: #000 url(../img/seta-grid-l.png) no-repeat center;				
+	opacity: 0.35; /* Standard CSS3 opacity setting */
+	-moz-opacity: 0.35; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+	filter: alpha(opacity = 35); /* Opacity for Internet Explorer. */ /* Trigger "hasLayout" in Internet Explorer 6 or older versions */
+}
+
+/* Invisible right hotspot */
+div.scrollingHotSpotRight
+{
+	width: 60px;
+	height: 260px;
+	background: rgba(0, 0, 0, 0.5) url(../img/seta-grid-r.png) no-repeat center;
+	position: absolute;
+	z-index: 200;
+	right: 0;
+	top: 2px;
+	cursor: pointer;
+}
+
+/* Visible right hotspot */
+div.scrollingHotSpotRightVisible
+{
+	background: #000 url(../img/seta-grid-r.png) no-repeat center;
+}
+
+/* The scroll wrapper is always the same width and height as the containing element (div).
+   Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+div.scrollWrapper
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+div.scrollableArea
+{
+	position: relative;
+	width: auto;
+	height: 100%;
+}
+

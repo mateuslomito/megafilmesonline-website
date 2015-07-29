@@ -1,0 +1,92 @@
+.titulo h1, .titulo h2, .titulo h3, .titulo h4, .titulo h5, .titulo h6 {font-family: 'Open Sans'; color:#363636; line-height: normal; font-weight: 700; text-transform: uppercase; }
+.titulo { }
+.titulo h2 {font-size: 25px;   padding: 0px 0px 25px 0;}
+.titulo .fio {}
+
+.titulo-pagina {margin-bottom: 40px; border-bottom: none; margin-top: 10px; }
+.titulo-pagina .container_960 { border-bottom: 5px solid #e7e7e7; padding: 0; }
+.titulo-pagina h2 { padding-bottom: 0; line-height: 70px; text-transform: uppercase; color:#363636; font-size: 32px; font-family: 'Open Sans'; font-weight: 300; display: table-cell; width: 1280px;  }
+.titulo-pagina.genero { height: auto; margin-bottom: 50px; }
+.titulo-pagina.genero .banner { overflow: hidden; max-width: 100%; min-width: 960px; height: 150px; display: block; text-align: center; margin-top: -5px; position: relative; }
+
+
+.vermais a {color:#f0352e; font-size: 13px;}
+.vermais a span {color:#7b8e98;}
+.vermais a:hover,
+.vermais a:hover span {color: #cc150e; text-decoration: underline;}
+
+/*.bt {background:url(../img/sprite.png) no-repeat 0 0;height: 27px;border: none; display: block;cursor: pointer;}
+    .bt.continuar {background-position: -71px -40px; width: 82px; display: block; padding: 0px !important;}
+    .bt.continuar:hover {background-position: -71px -67px;}
+
+
+
+    .bt.cancelar {background-position: -275px -40px ;  width: 73px;}
+    .bt.cancelar:hover {background-position: -275px -67px;}
+
+
+
+    .bt.continuar-assistindo {background-position: -221px -101px ;  width: 160px; height: 27px;}
+    .bt.continuar-assistindo:hover {background-position: -221px -128px;}
+
+    .bt.excluir{background-position: -275px 0px ;  width: 70px; height: 27px;}
+    .bt.excluir:hover {background-position: -345px 0px;}
+
+
+    /*.bt.excluir:hover {background-position: -345px 0px;}*/
+
+    .bt.contar-amigos{background-position: -220px -156px ;  width: 132px; height: 35px;}
+    .bt.contar-amigos:hover {background-position: -220px -191px;}
+
+.bt {background-color: #f1352e !important; display: inline-block; height: 27px; line-height: 27px; padding: 0 12px;-webkit-border-radius: 5px;
+-moz-border-radius: 5px;border-radius: 5px;border: none; cursor:pointer; font-size: 12px; font-family: Arial; font-weight: 300; color: #fff;}
+    .bt .ico-seta{background: url(../img/seta-bt.png) no-repeat 0 1px; padding-left: 15px;}
+    .bt .ico-dwl{background: url("../img/menu-canais-icone.gif") no-repeat right 1px; padding-right: 11px; font-weight: normal;}
+    .bt.big {background-color: #f1352e !important; height: 35px; line-height: 35px;}
+    .bt.gray {background-color: #435C69 !important;}
+    .bt:hover {background-color: #cc150e !important; color: #fff;}
+    .bt.gray:hover {background-color: #cc150e !important;}
+    .bt.big:hover {background-color: #cc150e !important;}
+
+.ico {background: url(../img/sprite.png) no-repeat 0 0; display: inline-block;}
+    .ico.bullet {width: 11px; height: 11px; background-position: -60px -40px;}
+    .ico.bullet.ativo { background-position: -60px -62px;}
+    .ico.bullet:hover { background-position: -60px -51px;}
+
+    .ico.email {background-position: -200px 0; width: 18px; height: 15px;}
+    .ico.email:hover {background-position: -200px -17px;}
+    .ico.twitter {background-position: -220px 0 !important; width: 20px !important; height: 15px !important; }
+    .ico.twitter:hover {background-position: -220px -17px !important;}
+    .ico.facebook {background-position: -241px 0; width: 10px; height: 15px;}
+    .ico.facebook:hover {background-position: -241px -17px;}
+    .ico.gmais {background-position: -251px 0px; width: 15px; height: 16px;}
+    .ico.gmais:hover {background-position: -251px -17px;}
+
+    .ico.seta-desc-filme {background-position: -160px -100px; width: 30px; height: 30px;}
+    /*/.ico.seta-desc-filme:hover {background-position: -190px -100px;}*/
+
+    .ico.assistir-agora {background-position: -153px -40px ;  width: 122px;}
+    .ico.assistir-agora:hover {background-position: -153px -67px;}
+
+    .ico.play-trilhos {background: url(../img/botoes-play-trilhos.png) no-repeat 0 -215px;  width: 67px; height: 49px;}
+    .ico.play-trilhos:hover {background-position: 0 -215px;}
+
+    .ico.play-player {width: 112px; height: 104px; background: url("../img/botao-play.png") no-repeat 0 0; opacity: 0.85; margin: -52px 0 0 -56px; }
+    .ico.play-player:hover { opacity: 1;}
+
+    .ico.fechar_lightbox_excluir_filme{background-position: -292px 0px ;  width: 12px; height: 12px;}
+
+    .ico.fechar_filtro {background-position: -285px 0px ;  width: 7px; height: 7px;}
+    .ico.fechar_filtro:hover {background-position: -285px -7px;}
+
+
+.faixa-etaria {color:#ffffff; font-family: Arial; display: inline-block; border: 1px solid #ffffff; font-size: 13px; line-height: 21px; letter-spacing: -1px; padding:0 6px 0 4px; -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
+.faixa-etaria-li {background-color: #00A651; padding-right: 8px; padding-left: 6px;}
+.faixa-etaria-10 {background-color: #0094DA;}
+.faixa-etaria-12 {background-color: #FFCA05;}
+.faixa-etaria-14 {background-color: #F5821F;}
+.faixa-etaria-16 {background-color: #EB1D1B;}
+.faixa-etaria-18 {background-color: #000000;}
+.faixa-etaria-alt {border-color: #ffffff;}
+
+
